@@ -30,6 +30,36 @@ forge compile
 forge test
 ```
 
+## Deploy Hook
+
+### Hook Counter.sol
+
+```shell
+forge script script/00_DeployHook.s.sol:DeployHookScript \
+--private-key $devTestnetPrivateKey \
+--rpc-url https://sepolia.unichain.org \
+--broadcast 
+```
+
+### Verify Uniswap V4 Hook Contract Already Deployed
+
+Use the `contractAddress` from CREATE2 from
+
+```
+broadcast/00_DeployHook.s.sol/1301/run-latest.json
+```
+
+then run
+
+```shell
+forge verify-contract \
+--rpc-url https://sepolia.unichain.org \
+<contract_address> \
+src/Counter.sol:Counter \
+--verifier blockscout \
+--verifier-url https://unichain-sepolia.blockscout.com/api/
+```
+
 ## Additional Resources
 
 - [Uniswap v4 docs](https://docs.uniswap.org/contracts/v4/overview)
