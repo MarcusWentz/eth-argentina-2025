@@ -10,7 +10,9 @@ import {PoolId, PoolIdLibrary} from "@uniswap/v4-core/src/types/PoolId.sol";
 import {BalanceDelta} from "@uniswap/v4-core/src/types/BalanceDelta.sol";
 import {BeforeSwapDelta, BeforeSwapDeltaLibrary} from "@uniswap/v4-core/src/types/BeforeSwapDelta.sol";
 
-contract Counter is BaseHook {
+import {Equation} from "src/Equation.sol";
+
+contract Counter is BaseHook, Equation {
     using PoolIdLibrary for PoolKey;
 
     // NOTE: ---------------------------------------------------------
@@ -54,6 +56,7 @@ contract Counter is BaseHook {
         override
         returns (bytes4, BeforeSwapDelta, uint24)
     {
+        Equation.charge();
         beforeSwapCount[key.toId()]++;
         return (BaseHook.beforeSwap.selector, BeforeSwapDeltaLibrary.ZERO_DELTA, 0);
     }
