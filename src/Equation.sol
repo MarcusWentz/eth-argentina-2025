@@ -13,8 +13,8 @@ import { pow, mul, div, ln } from "prb-math/ud60x18/Math.sol";
 contract Equation {
 
     uint256 private constant WAD = 1e18;
-        // Probability in WAD (e.g., 0.66e18 for 66%)
-    uint256 public pYesWad = 0.5 ether;
+    // Probability in WAD (e.g., 0.66e18 for 66%)
+    uint256 public pYesWad = 0.75 ether; // 75% probability.
 
     // function discharge() public pure returns (int256 result) {
 
