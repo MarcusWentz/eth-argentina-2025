@@ -6,18 +6,17 @@
 
 Prediction market for AMMs with a Uniswap V4 hook.
 
-### 25 percent 
-
-<img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_25_percent.jpg" alt="Wiring"/>
-
 ### 50 percent
 
-<img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_50_percent.jpg" alt="Wiring"/>
+<img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_50_percent.jpg" alt="50_percent"/>
 
 ### 80 percent
 
-<img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_80_percent.jpg" alt="Wiring"/>
+<img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_80_percent.jpg" alt="80_percent"/>
 
+### 25 percent 
+
+<img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_25_percent.jpg" alt="25_percent"/>
 
 ## Install
 
