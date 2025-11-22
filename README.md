@@ -62,7 +62,7 @@ src/Counter.sol:Counter \
 
 ### Hook Deployed and Verified on Unichain Sepolia
 
-https://unichain-sepolia.blockscout.com/address/0x472c7ba6F53ba9F3d4832b6B68340b6fB5EA8Ac0?tab=contract
+https://unichain-sepolia.blockscout.com/address/0x229b2623ce3a4dfd5190844c4efe299c0edf0ac0?tab=contract
 
 ## Additional Resources
 
