@@ -2,6 +2,23 @@
 
 **A template for writing Uniswap v4 Hooks 🦄**
 
+## Project Overview
+
+Prediction market for AMMs with a Uniswap V4 hook.
+
+### 25 percent 
+
+<img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_25_percent.jpg" alt="Wiring"/>
+
+### 50 percent
+
+<img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_50_percent.jpg" alt="Wiring"/>
+
+### 80 percent
+
+<img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_80_percent.jpg" alt="Wiring"/>
+
+
 ## Install
 
 ### Global libraries
