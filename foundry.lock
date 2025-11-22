@@ -5,6 +5,12 @@
   "lib/hookmate": {
     "rev": "33408fbc15e083eb0bc4205fa37cb6ba0a926f44"
   },
+  "lib/prb-math": {
+    "branch": {
+      "name": "release-v4",
+      "rev": "280fc5f77e1b21b9c54013aac51966be33f4a410"
+    }
+  },
   "lib/uniswap-hooks": {
     "rev": "e59fe72c110c3862eec9b332530dce49ca506bbb"
   }

@@ -181,3 +181,11 @@ Hook deployment failures are caused by incorrect flags or incorrect salt mining
 - [v4-periphery](https://github.com/uniswap/v4-periphery)
 - [v4-core](https://github.com/uniswap/v4-core)
 - [v4-by-example](https://v4-by-example.org)
+
+## Install
+
+### prb-math 
+
+```shell
+forge install PaulRBerg/prb-math@release-v4 --no-commit
+```
