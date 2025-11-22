@@ -60,6 +60,10 @@ src/Counter.sol:Counter \
 --verifier-url https://unichain-sepolia.blockscout.com/api/
 ```
 
+### Hook Deployed and Verified on Unichain Sepolia
+
+https://unichain-sepolia.blockscout.com/address/0x472c7ba6F53ba9F3d4832b6B68340b6fB5EA8Ac0?tab=contract
+
 ## Additional Resources
 
 - [Uniswap v4 docs](https://docs.uniswap.org/contracts/v4/overview)
