@@ -57,6 +57,7 @@ contract Counter is BaseHook, Equation {
         returns (bytes4, BeforeSwapDelta, uint24)
     {
         Equation._solveYGivenKAndX(1,1);
+        // Equation._solveXGivenKAndY(1,1);
         beforeSwapCount[key.toId()]++;
         return (BaseHook.beforeSwap.selector, BeforeSwapDeltaLibrary.ZERO_DELTA, 0);
     }

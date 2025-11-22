@@ -117,4 +117,27 @@ contract Equation {
         yPrime = unwrap(yU);
     }
 
+    function _solveXGivenKAndY(uint256 k0, uint256 yPrime) internal view returns (uint256 xPrime) {
+        // x' = (K / y'^(1-p))^(1/p)
+        require(yPrime > 0, "y'=0");
+        UD60x18 yU = wrap(yPrime);
+        UD60x18 oneMinusP = wrap(WAD - pYesWad);
+        UD60x18 pU = wrap(pYesWad);
+
+        // y'^(1-p)
+        UD60x18 yPow = pow(yU, oneMinusP);
+        // ratio = K / y'^(1-p)
+        UD60x18 ratio = div(wrap(k0), yPow);
+        // exponent = 1/p
+        UD60x18 invP = div(wrap(WAD), pU);
+
+        UD60x18 xU;
+        if (unwrap(ratio) >= WAD) {
+            xU = _powSegmentedIfNeeded(ratio, invP);
+        } else {
+            xU = pow(ratio, invP);
+        }
+        xPrime = unwrap(xU);
+    }
+
 }
