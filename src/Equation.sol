@@ -14,7 +14,7 @@ contract Equation {
 
     uint256 private constant WAD = 1e18;
         // Probability in WAD (e.g., 0.66e18 for 66%)
-    uint256 public pYesWad;
+    uint256 public pYesWad = 0.5 ether;
 
     // function discharge() public pure returns (int256 result) {
 
