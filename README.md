@@ -1,14 +1,18 @@
-# Uniswap v4 Hook Template
+# Orbswap Asymmetric Prediction Market AMM
 
-**A template for writing Uniswap v4 Hooks 🦄**
+**A template for writing Uniswap v4 pm-AMM hook 🦄**
 
 ## Project Overview
-Test
+Most prediction markets are adopted as orderbooks, but AMMs have not taken off as prediction market infrastructure. Our belief for it is that custom curves such as CPMM and LMSR do not allow for the concentration of the probability by the LP, instead the LP is forced to accept a 50/50 outcome, waiting until the event occurs, resulting in IL as seen in desmos figure below ([href=https://www.desmos.com/calculator/sk8d2g49hj]
+
 Prediction market for AMMs with a Uniswap V4 hook.
 
 ### 50 percent
 
 <img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_50_percent.jpg" alt="50_percent"/>
+
+
+We come up with a custom curve that allows the LP to concentrate one's probability just like uniswap v3 allows one to concentrate one's range. We now have the ability to not just be passive liquidity providers, but also make a bet on the likelihood of an outcome ourselves.
 
 ### 80 percent
 
