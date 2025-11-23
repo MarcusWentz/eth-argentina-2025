@@ -3,7 +3,7 @@
 **Uniswap v4 pm-AMM hook for an asymmetric LP payoff 🦄**
 
 ## Project Overview
-Most prediction markets are adopted as orderbooks, but AMMs have not taken off as prediction market infrastructure. Our belief for it is that custom curves such as CPMM and LMSR do not allow for the concentration of the probability by the LP, instead the LP is forced to accept a 50/50 outcome, waiting until the event occurs, resulting in IL as seen in desmos figure below [href=https://www.desmos.com/calculator/sk8d2g49hj].
+Most prediction markets are adopted as orderbooks, but AMMs have not taken off as prediction market infrastructure. Our belief for it is that custom curves such as CPMM and LMSR do not allow for the concentration of the probability by the LP, instead the LP is forced to accept a 50/50 outcome, waiting until the event occurs, resulting in IL as seen in desmos figure below and simluation link here: [href=https://www.desmos.com/calculator/sk8d2g49hj].
 
 For example, consider the prediction for tomorrow's weather, will it rain or shine? It rarely is a 50/50 coinflip, instead it's a rather specific probability, and an LP should have the freedom, just like in Uniswap v3, to concentrate around such a specific probability.
 
@@ -18,13 +18,14 @@ We come up with a custom curve that allows the LP to concentrate one's probabili
 
 <img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_80_percent.jpg" alt="80_percent"/>
 
-This unique invariant responsible happens to be the same as Balancer's invariant x^(1-w)*y^w = k where w is the weight, but we replace w with the value of probability rangin from 0 to 100%. when w=.5 we have a 50% Probability and the invariant simplifies to the 50% peak above, giving us a classic CPMM. 
+The unique invariant happens to be x^(1-P)*y^P = k where P is the value of probability ranging from 0 to 100%. when P=.5 we have a 50% probability and the invariant simplifies to the 50% peak above, giving us a classic CPMM such as the one used by butter.markets for conditional funding markets.
 
 ### 25 percent 
 
 <img src="https://github.com/MarcusWentz/eth-argentina-2025/blob/main/images/probability_25_percent.jpg" alt="25_percent"/>
 
-It may also be possible for another LP to also come up with a similar asymmetric, but flipped probability such as outlined in red. One LP thinks there is a 75% chance of an event happening, while the other 25%. If they have the same liquidity amount, then their total LP shares would cancel each other out as well.
+### Further developments
+It may also be possible for another LP to also come up with a similar asymmetric yet flipped probability such as outlined in red. One LP thinks there is a 75% chance of an event happening, while the other 25%. If they have the same liquidity amount, then their total LP shares would cancel each other out as well.
 
 ## Install
 
