@@ -1,6 +1,6 @@
-# Orbswap Asymmetric Prediction Market AMM
+# Orbswap Asymmetric pm-AMM
 
-**A template for writing Uniswap v4 pm-AMM hook 🦄**
+**Uniswap v4 pm-AMM hook for an asymmetric LP payoff 🦄**
 
 ## Project Overview
 Most prediction markets are adopted as orderbooks, but AMMs have not taken off as prediction market infrastructure. Our belief for it is that custom curves such as CPMM and LMSR do not allow for the concentration of the probability by the LP, instead the LP is forced to accept a 50/50 outcome, waiting until the event occurs, resulting in IL as seen in desmos figure below ([href=https://www.desmos.com/calculator/sk8d2g49hj]
